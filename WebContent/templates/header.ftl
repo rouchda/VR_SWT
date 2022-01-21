@@ -26,7 +26,7 @@
 </head>
 <body>
 <div id="wrapper">
-	<div id="logo">Vacation Rentals<br>Software Engineering Example</div>
+	<div id="logo">Movie Rating App<br>Software Engineering Project</div>
     <ul id="navigation">
     	<li><a href="index" title="Index">View Homesite</a></li>
 	<#if navtype == "guest">
