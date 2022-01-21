@@ -29,6 +29,7 @@
 	<div id="logo">Movie Rating App<br>Software Engineering Project</div>
     <ul id="navigation">
     	<li><a href="index" title="Index">View Homesite</a></li>
+		<li><a href="Registration" title="Registration">Registration</a></li>
 	<#if navtype == "guest">
     	<li><a href="guestgui?page=defaultwebpage" title="Search Offers">Search Offers</a></li>	
 	<#elseif navtype == "staffmember">
