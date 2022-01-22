@@ -1,0 +1,175 @@
+package dbadapter;
+
+public class UserRating {
+
+		int ratingid;
+		int mId;
+		String title;
+		String username;
+		int ratings;
+		String comment;
+		
+		/*Timestamp creationDate;
+		Timestamp arrivalTime;
+		Timestamp departureTime;
+		boolean paid;
+		GuestData guestData;
+		double price;
+		int hid;*/
+
+		public UserRating(
+				
+		int ratingid,
+		int mId,
+		String title,
+		String username,
+		int ratings,
+		String comment) 
+		{
+			super();
+			this.ratingid = ratingid;
+			this.mId = mId;
+			this.title = title;
+			this.username = username;
+			this.ratings = ratings;
+			this.comment = comment;
+			
+		}
+
+		public int getMId() {
+			return mId;
+		}
+
+		public void setMId(int mId) {
+			this.mId = mId;
+		}
+
+		public int getRatingid() {
+			return ratingid;
+		}
+
+		public void setRatingid(int ratingid) {
+			this.ratingid = ratingid;
+		}
+
+		public String getTitle() {
+			return title;
+		}
+
+		public void setTitle(String title) {
+			this.title = title;
+		}
+		
+		public String getUsername() {
+			return username;
+		}
+
+		public void setUsername(String username) {
+			this.username = username;
+		}
+		
+		public int getRatings() {
+			return ratings;
+		}
+
+		public void setRatings(int ratings) {
+			this.ratings=ratings;
+		}
+		
+		public String getComment() {
+			return comment;
+		}
+
+		public void setComment(String comment) {
+			this.comment = comment;
+		}
+		
+		public float Rate(int movieRating) {
+
+			if (ratings >= 1) && (ratings <= 10) {
+				return ratings;	
+			}
+			else {
+				System.out.println("invalid value");
+			}
+		 }
+
+		
+		/*public Timestamp getArrivalTime() {
+			return arrivalTime;
+		}
+
+		public void setArrivalTime(Timestamp arrivalTime) {
+			this.arrivalTime = arrivalTime;
+		}
+
+		public Timestamp getDepartureTime() {
+			return departureTime;
+		}
+
+		public void setDepartureTime(Timestamp departureTime) {
+			this.departureTime = departureTime;
+		}
+
+		public boolean isPaid() {
+			return paid;
+		}
+
+		public void setPaid(boolean paid) {
+			this.paid = paid;
+		}
+
+		public GuestData getGuestData() {
+			return guestData;
+		}
+
+		public void setGuestData(GuestData guestData) {
+			this.guestData = guestData;
+		}
+
+		public double getPrice() {
+			return price;
+		}
+
+		public void setPrice(double price) {
+			this.price = price;
+		}
+
+		/**
+		 * Checks if this booking overlaps with the given timespace.
+		 * 
+		 * @param arrivalTime
+		 * @param departureTime
+		 * @return
+		
+		public boolean overlap(Timestamp arrivalTime, Timestamp departureTime) {
+			//Check precondition
+			assert this.arrivalTime.before(this.departureTime) :
+				"pre not satisfiedd: this.arrivalTime < this.departureTime";
+			assert arrivalTime.before(departureTime) :
+				"pre not satisfiedd: arrivalTime < departureTime";
+			// Case 1
+			if ((arrivalTime.after(this.arrivalTime) || arrivalTime.equals(this.arrivalTime))
+					&& (arrivalTime.before(this.departureTime) || arrivalTime.equals(this.departureTime))) {
+				return true;
+			}
+			// Case 2
+			if ((departureTime.after(this.arrivalTime) || departureTime.equals(this.arrivalTime))
+					&& (departureTime.before(this.departureTime) || departureTime.equals(this.departureTime))) {
+				return true;
+			}
+			// Case 3
+			if (arrivalTime.before(this.arrivalTime) && departureTime.after(this.departureTime)) {
+				return true;
+			}
+			return false;
+		}
+		 */
+		
+		
+}
+
+	
+
+
+
